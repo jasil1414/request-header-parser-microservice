@@ -3,7 +3,7 @@
 -  I can get the IP address, language and operating system for my browser.
 
 ##Example Usage:
-###`localhost:3000/whoami`
+###`https://jasil1414-headerparser.herokuapp.com/whoami`
 
 ##Example output:
 ####{"ip":"XX.XX.XXX.XXX","operating-system":"Windows NT 10.0; WOW64","language":"en-US"}
