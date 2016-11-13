@@ -6,7 +6,7 @@ app.set('port',(process.env.PORT ||3000));// port configuration when hosting is 
 
 app.get('/whoami', function(req,res){
        res.json(headerInfo(req,res));//respond with json object
-}); 
+});
 
 app.listen(app.get('port'), function(){
   console.log('Listening on port: '+ app.get('port'));
