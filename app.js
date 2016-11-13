@@ -7,7 +7,7 @@ app.set('view engine','pug');
 app.set('views', './views');
 
 app.get('/', function(req,res){
-  res.reder('index');
+  res.render('index');
 });
 app.get('/whoami', function(req,res){
        res.json(headerInfo(req,res));//respond with json object
