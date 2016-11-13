@@ -3,7 +3,12 @@ var headerInfo = require('./routes/header_info');// header information fetcher m
 
 var app = express();
 app.set('port',(process.env.PORT ||3000));// port configuration when hosting is done on heroku, Nodejistu or AWS.
+app.set('view engine','pug');
+app.set('views', './views');
 
+app.get('/', function(req,res){
+  res.reder('index');
+});
 app.get('/whoami', function(req,res){
        res.json(headerInfo(req,res));//respond with json object
 });
